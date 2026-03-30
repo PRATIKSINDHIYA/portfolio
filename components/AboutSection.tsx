@@ -11,8 +11,9 @@ import { useRef, useState, useEffect } from 'react';
 
 const ABOUT_IMAGES = [
   '/images/pratik-profile.png',
-  '/images/pratik-second.png',
-  '/images/pratik-third.png',
+  '/newphoto/photo1.png',
+  '/newphoto/photo2.jpeg',
+  '/newphoto/photo3.jpg',
 ] as const;
 
 const LinkedInIcon = ({ className }: { className?: string }) => (

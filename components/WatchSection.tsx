@@ -6,9 +6,9 @@ import Image from 'next/image';
 import { MapPin, Linkedin, Github, Twitter } from 'lucide-react';
 
 const SLIDER_IMAGES = [
-  '/images/pratik-third.png',
-  '/images/pratik-profile.png',
-  '/images/pratik-second.png',
+  '/newphoto/image1.jpeg',
+  '/newphoto/image2.jpeg',
+  '/newphoto/image3.jpeg',
 ] as const;
 
 export default function WatchSection() {
