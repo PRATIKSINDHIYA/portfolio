@@ -60,7 +60,7 @@ const educationData = [
     degree: 'B.Tech Computer Science',
     duration: '2022 - 2026',
     location: 'Gandhinagar, India',
-    highlight: 'CPI: 6.64',
+    highlight: 'Collage',
     image: '/images/IIITV.png',
     imageAlt: 'IIIT Vadodara Gandhinagar campus',
   },
