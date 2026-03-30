@@ -1,0 +1,146 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  --color-background: #0b0b0b;
+  --color-foreground: #ffffff;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  color: var(--color-foreground);
+  background: var(--color-background);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html[data-theme='light'] {
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+}
+
+html[data-theme='light'] :is(#about, #craft, #skills, #projects, #experience, #contact) {
+  background: #f8fafc !important;
+}
+
+html[data-theme='light'] :is(#about, #craft, #skills, #projects, #experience, #contact) .text-white {
+  color: #0f172a !important;
+}
+
+html[data-theme='light'] :is(#about, #craft, #skills, #projects, #experience, #contact) .text-white\/80,
+html[data-theme='light'] :is(#about, #craft, #skills, #projects, #experience, #contact) .text-white\/70,
+html[data-theme='light'] :is(#about, #craft, #skills, #projects, #experience, #contact) .text-neutral-300,
+html[data-theme='light'] :is(#about, #craft, #skills, #projects, #experience, #contact) .text-neutral-400,
+html[data-theme='light'] :is(#about, #craft, #skills, #projects, #experience, #contact) .text-neutral-500 {
+  color: #334155 !important;
+}
+
+html[data-theme='light'] header nav {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(148, 163, 184, 0.4) !important;
+}
+
+html[data-theme='light'] header nav .text-white,
+html[data-theme='light'] header nav .text-neutral-400 {
+  color: #0f172a !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom selection */
+::selection {
+  background: rgba(249, 115, 22, 0.3);
+  color: #fff;
+}
+
+/* Offset for fixed nav (Lenis scrollTo uses same value) */
+[id] {
+  scroll-margin-top: 6rem;
+}
+
+/* Section rhythm — avoids overlap / horizontal bleed */
+.section-surface {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  overflow-x: clip;
+}
+
+/* Animation utilities */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Perspective for 3D effects */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+/* Smooth transitions */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0b0b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Glow effect utilities */
+.glow-orange {
+  box-shadow: 0 0 40px rgba(249, 115, 22, 0.3);
+}
+
+.glow-blue {
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+}
+
+.glow-purple {
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.3);
+}
+
+/* Text balance for headings */
+.text-balance {
+  text-wrap: balance;
+}
