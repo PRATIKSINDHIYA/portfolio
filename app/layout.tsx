@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import Navigation from '@/components/Navigation';
 import LenisProvider from '@/components/LenisProvider';
+import ScrollReset from '@/components/ScrollReset';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${playfair.variable} font-sans bg-background text-foreground no-scrollbar antialiased m-0 p-0 overflow-x-hidden min-h-screen flex flex-col`}>
         <LenisProvider>
+          <ScrollReset />
           <Navigation />
           {children}
         </LenisProvider>
