@@ -12,7 +12,7 @@ const experiences = [
   role: 'Chief Technology Officer (CTO)',
   duration: 'May 2026 - Aug 2026',
   location: 'Jaipur, India',
-  website: 'https://tunfularetail.com',
+  website: 'https://tufularetail.com',
   type: 'Full-time',
   description:
     'Led the company’s technology development as the sole IT professional, managing Quick Commerce application launch and building retail ERP/POS solutions.',
