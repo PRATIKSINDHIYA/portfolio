@@ -153,7 +153,7 @@ export default function AboutSection() {
               className="pt-2 lg:hidden"
             >
               <a
-                href="https://drive.google.com/uc?export=download&id=1xcjHn8ClDdXvQlV3rVmYqPAhOC-3Tly8"
+                href="https://drive.google.com/file/d/1KVRh7m4jnpw1ve08LUWsiSN76wiNkH2M/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-orange-400/60 hover:bg-orange-500/10"
