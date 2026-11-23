@@ -5,11 +5,32 @@ import { ExternalLink, Calendar, MapPin, Briefcase } from 'lucide-react';
 import Image from 'next/image';
 
 const experiences = [
+  
+{
+  id: 1,
+  company: 'Tufula Retail Private Limited',
+  role: 'Chief Technology Officer (CTO)',
+  duration: 'May 2026 - Aug 2026',
+  location: 'Jaipur, India',
+  website: 'https://tunfularetail.com',
+  type: 'Full-time',
+  description:
+    'Led the company’s technology development as the sole IT professional, managing Quick Commerce application launch and building retail ERP/POS solutions.',
+  achievements: [
+    'Led end-to-end development and Jaipur launch of Tufula Quick Commerce Mobile Application',
+    'Managed UI/UX, frontend, backend development, testing, and deployment',
+    'Designed and developed custom ERP/POS system for retail operations',
+    'Implemented inventory, warehouse management, barcode scanning, product search, and stock transfer workflows',
+  ],
+  tech: ['UI/UX', 'Frontend Development', 'Backend Development', 'ERP', 'POS', 'Inventory Management', 'Barcode Integration'],
+  color: 'from-orange-500 to-pink-500',
+},
+
   {
-    id: 1,
+    id: 2,
     company: 'Lyfex SkillTech Private Limited',
     role: 'SDE Intern',
-    duration: 'Dec 2025 - Present',
+    duration: 'Jan 2026 - Jun 2026',
     location: 'Remote',
     website: 'https://thelyfex.com',
     type: 'Full-time',
@@ -29,7 +50,7 @@ const experiences = [
     color: 'from-blue-500 to-cyan-500',
   },
   {
-    id: 2,
+    id: 3,
     company: 'ManMa Services Private Limited',
     role: 'Full Stack Web Developer Intern',
     duration: 'Feb 2025 - Oct 2025',
